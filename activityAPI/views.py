@@ -31,7 +31,10 @@ if date.today().weekday() == 3:
 if date.today().weekday() == 4:
     this_week = datetime.now() + timedelta(days=1)
 
-if date.today().weekday() == 5 | 6:
+if date.today().weekday() == 5:
+    this_week = datetime.now() + timedelta(days=6)
+
+if date.today().weekday() == 6:
     this_week = datetime.now() + timedelta(days=6)
 
 @api_view(['GET', 'POST'])
